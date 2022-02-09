@@ -8,7 +8,9 @@ import Profile from './profile/index';
 
 const Tab = createBottomTabNavigator();
 
-const DashboardNavigator = ()=>{
+const DashboardNavigator = (props)=>{
+    // Receiving params from navigation
+    console.log(props.route);
     return(
         <Tab.Navigator screenOptions={{headerShown: false}}>
             <Tab.Screen name={routes.root.dashboard.tabs.home.NAME} component={Home}/>

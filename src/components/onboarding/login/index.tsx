@@ -3,11 +3,14 @@ import {View,Text,StyleSheet,Pressable} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import routes from '../../../assets/routes';
 
+const nameOfUser = 'Aditya';
 const Login = ()=>{
-
+    
     const navigation = useNavigation();
     const goToDash = () =>{
-        navigation.navigate(routes.root.dashboard.NAME)
+        navigation.navigate(routes.root.dashboard.NAME,{
+            name: nameOfUser
+        });
     }
 
     return(
