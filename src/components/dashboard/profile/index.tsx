@@ -5,7 +5,7 @@ import Header from '../../common/header';
 const Profile = ()=>{
     return(
         <View>
-            <Header title = {'Welcome Profile'}/>
+            <Header title = {'Profile'}/>
         </View>
     )
 };

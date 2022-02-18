@@ -5,9 +5,9 @@ import Header from '../../common/header';
 const Home = ()=>{
     return(
         <View>
-            <Header title = {'Welcome Home'}/>
+            <Header title = {'Home'}/>
         </View>
     )
 };
 
-export default Home;
+export default Home; 
